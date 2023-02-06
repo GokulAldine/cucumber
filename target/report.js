@@ -1,0 +1,53 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src\\test\\resources\\FEATURE\\Stepdefinition.feature");
+formatter.feature({
+  "name": "MakeMyTrip.stepdefinition",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "TickerBooking",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "launch the MakeMyTrip web page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitionClass.launch_the_MakeMyTrip_web_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user selecting the city destination",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitionClass.user_selecting_the_city_destination()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user selecting the month and date",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitionClass.user_selecting_the_month_and_date()"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//p[text()\u003d\u0027₹ 2,849\u0027])[4]\"}\n  (Session info: chrome\u003d109.0.5414.120)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.7.2\u0027, revision: \u00274d4020c3b7\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [244acf6f0681f77abfad3ebfe7de1a74, findElement {using\u003dxpath, value\u003d(//p[text()\u003d\u0027₹ 2,849\u0027])[4]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\gokul\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51525/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 244acf6f0681f77abfad3ebfe7de1a74\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)\r\n\tat myProject.cucu.stepdefinition.stepdefinitionClass.user_selecting_the_month_and_date(stepdefinitionClass.java:85)\r\n\tat ✽.user selecting the month and date(src\\test\\resources\\FEATURE\\Stepdefinition.feature:7)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user exit",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitionClass.user_exit()"
+});
+formatter.result({
+  "status": "skipped"
+});
+});
